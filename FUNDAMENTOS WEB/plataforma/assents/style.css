@@ -23,6 +23,11 @@ body
 
 }
 
+.estrutura .capmarvel img {
+    width: 35%;
+    margin-right: 15%;
+}
+
 .base { 
     width: 100%;
     position: absolute;
