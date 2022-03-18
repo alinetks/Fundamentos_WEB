@@ -10,18 +10,16 @@
 </head>
 <body>
     <header>  
-        <nav class="base">
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+    </nav>
     </header>
 
 
@@ -31,47 +29,52 @@
 
 
     <div class="contact">
-    
-        <aside class="onde-estamos" width="50">
-            <p> Industrias Stark - 2439 - Malibu </p>
-            <p> Califórnia - EUA </p>
-    
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!4v1647454753040!6m8!1m7!1s7u_celO9m1h9hNP9MgUXOA!2m2!1d-23.55634746853397!2d-46.66241534143366!3f254.92395055043232!4f4.929318950467547!5f0.7820865974627469"
-            width="400"
-            height="250"
-            style="border:0;" 
-            allowfullscreen=""
-            loading="lazy"></iframe>
-        </aside>
-
-    <form class="form">
+        <div class="form">
+    <form>
         <label for="name">Seu nome:</label><br>
-        <input type="name" id="name">
-        <br>
+        <input type="text" id="name" onkeyup='validaNome()'>
+        <div id="txtNome"></div>
         <br>
         <label for="email">Email:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="name">Nome do Herói:</label><br>
-        <input type="name" id="name">
-        <br>
+        <input type="email" id="email" onkeyup='validaEmail()'>
+        <div id="txtEmail"></div>
         <br>
         <label for="assunto">Duvidas ou sugestões: </label><br>
-        <textarea name="assunto" id="assunto" cols="45" rows="15"></textarea> <br><br>
+        <textarea name="assunto" id="assunto" cols="45" rows="15" onkeyup="validaAssunto()"></textarea> 
+        <div id="txtAssunto"></div>
+        <br>
 
-        <button>Enviar</button>
+        <button onclick="enviar()">Enviar</button>
     </form>   
+    </div>
+
+    <div class="onde-estamos">
+        <p> Industrias Stark - 2439 - Malibu </p>
+        <p> Califórnia - EUA </p>
+
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!4v1647454753040!6m8!1m7!1s7u_celO9m1h9hNP9MgUXOA!2m2!1d-23.55634746853397!2d-46.66241534143366!3f254.92395055043232!4f4.929318950467547!5f0.7820865974627469"
+        width="400"
+        height="250"
+        style="border:0;" 
+        allowfullscreen=""
+        loading="lazy"></iframe>
+    </div>
+
+
     </div>
     <br><br>
     <br><br>    
 
     <!-- rodapé --> 
  
- <footer class="rodape">
-	<p> Blog Garota Nerd - Blog pessoal - de fã para fã. </p>
- </footer>
+    <footer>
+        <div class="rodape">
+           <p> Blog Garota Nerd &copy - De fã para fã. </p>
+        </div>
+    </footer>
+
+    <script src="assents/script.js"> </script>
 
 </body>
 </html>

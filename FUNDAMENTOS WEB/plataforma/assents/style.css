@@ -7,78 +7,45 @@ body
     font-family: 'Fredoka', sans-serif;
 }
 
-.cabecalho{ 
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+/*MENU*/
+.cabecalho img { width: 100%;}
+#menu li { 
+    display: inline;
+    padding: 20px;
 }
 
-.cabecalho img { 
-    width: 100%;
-}
-
-.container .middle img {
-    width: 100%;
-
-}
-
-.estrutura .capmarvel img {
-    width: 35%;
-    margin-right: 15%;
-}
-
-.base { 
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.base .menu{ 
-    width: auto;
-    background-color: rgb(22, 22, 22);
-}
-
-.base .menu ul
-{ 
-    background-color: rgb(138, 15, 15);
-    flex-direction: row-reverse;
-}
-
-.base .menu li{
-    display: inline-block;
-    margin: 2%;
-}
-
-.base .menu li:hover{
-    transform: scale(1.2);
-    z-index: 5;
-    transform-box:initial;
-}
-
-.base .menu li a {
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
+#menu li a{ 
     text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
+#menu li a:hover { 
+    color: #fff;
+}
+
+nav { background-color: rgb(121, 14, 14); width: 100%; flex-flow: row; display: flex;}
+
+/*CABEÇALHO DO CORPO*/
+
+.gif img{width: 100%;}
 
 /*INICIO DO CORPO*/
 
 .container
-{ 
-    text-align: center;
-}
+{   width: 100%;
+    flex-flow: row;
+    display: flex;
+    justify-content: center;}
 
-.imagem 
-{
-    width: 40%;
-    border-radius: 15px;
-}
+.boximg {width: 30%;}
+.boximg img {width: 100%; margin-top: 30%;}
+.capmarvel {width: 30%;}
+.capmarvel img{width: 70%; margin-top: 20%;} 
+
+.boxtxt {width: 45%; }
+
+.boxtxt h3{font-size: 15px; text-align: justify;}
 
 .container-flex {
     display: flex;
@@ -91,61 +58,27 @@ body
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
-/*INICIO DO CORPO*/
-
-.estrutura
-{ 
-    text-align: center;
-}
-
-.estrutura h3 {
-    font-size: 15px;
-    text-align: justify;
-}
-
-.estrutura img {
-    width: 55%;
-}
-
-.estrutura .alinhad
-{ 
-    margin: 15%;
-    text-align: right;
-}
-
-.estrutura .alinhae
-{ 
-    margin: 15%;
-    text-align: left;
-}
-
-
-
 /* BASE - RODAPÉ*/
 
-.rodape {width: 100%; margin-top: 10%; background-color: rgb(121, 14, 14); display: flex; position: absolute;}
-
-.rodape p {margin-left: 5%; color: #fff;}
+.rodape {display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; background-color: rgb(121, 14, 14); color: #fff;}
 
 
 /*CORPO*/
 .contact {
     width: 100%;
-    flex-direction: row;
+    display: flex;
 }
 
 /* FORM */
-.form {width: 50%; margin-left: 5%; font-size: 20px;}
-.form input{background-color: #FFFF; box-shadow: 2px 2px 5px #333; sizing: 50px; border-radius: 10px; width:70%; height: 50px;}
-.form textarea{background-color: #FFFF; box-shadow: 2px 2px 5px #333; margin: 5px; padding:15px ; border-radius: 10px; width: 70%;}
+.form {width: 60%; margin-left: 5%;}
+.form input{background-color: #FFFF; border-radius: 10px; width:70%; height: 50px;}
+.form textarea{background-color: #FFFF; padding:15px ; border-radius: 10px; width: 70%;}
 
 /* MAPA */
-.onde-estamos {width: 40%; margin-right: 5%;}
-aside iframe {width:100%; height: 250px; margin: 20px 0; display: flex; flex-direction: column; align: top;}
-.onde-estamos {padding: 20px 8%; font-family: 'Roboto Slab', serif; font-weight: normal; width:30%; float:right; padding: 10px 20px; background-color: rgb(138, 15, 15); box-shadow: 2px 2px 5px #fff; border-radius: 5px;}
-
-button {width:40%; padding: 10px 10px; border-radius:5px; box-shadow: 2px 2px 5px #fff; font-size: 20px;}
-
+iframe {width:100%; display: flex; flex-direction: column;}
+.onde-estamos {padding: 10px 20px; float:right; background-color: rgb(138, 15, 15); border-radius: 5px; height: 60%;}
+button {width:40%; padding: 10px 10px; border-radius:5px; font-size: 20px;}
 
